@@ -22,11 +22,13 @@
     "nodemon": "^2.0.22"
   },
   "devDependencies": {
+    "@prisma/client": "^4.11.0",
     "@types/cors": "^2.8.13",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.17",
     "@types/helmet": "^4.0.0",
     "@types/morgan": "^1.9.4",
+    "prisma": "^4.11.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   }

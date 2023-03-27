@@ -3,7 +3,6 @@ import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
-import chalk from "chalk";
 
 const app = express();
 
