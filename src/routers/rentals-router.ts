@@ -1,6 +1,9 @@
+import { authenticateToken } from "src/middlewares";
+
 import { Router } from "express";
 const rentalsRouter = Router();
 
+// rentalsRouter.all("/*", authenticateToken);
 rentalsRouter.get("/");
 rentalsRouter.get("/:id");
 rentalsRouter.post("/");
