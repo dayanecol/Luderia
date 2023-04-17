@@ -22,18 +22,6 @@ loadEnv();
 const app = express();
 app.use(cors());
 app.use(json());
-//app.use(morgan("tiny"));
-
-//app.use(helmet());
-
-// app.use((req: Request, res: Response, next: NextFunction) => {
-//   res.send("Hello World");
-// });
-
-// app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
-//   res.status(500).send(error.message);
-// });
-
 app
   .get("/health", (req: Request, res: Response) => res.send("I'am alive!"))
   .use("/users", usersRouter)
