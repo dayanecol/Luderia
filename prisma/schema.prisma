@@ -38,7 +38,7 @@ model Rental {
   start_date DateTime
   end_date   DateTime
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt()
+  updatedAt DateTime @updatedAt
 }
 
 model Session {

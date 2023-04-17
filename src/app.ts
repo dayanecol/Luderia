@@ -7,8 +7,6 @@ import express, {
   Express,
 } from "express";
 import cors from "cors";
-import morgan from "morgan";
-import helmet from "helmet";
 import {
   usersRouter,
   authenticationRouter,

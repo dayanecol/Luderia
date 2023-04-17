@@ -2,7 +2,12 @@ import { prisma } from "src/config";
 import { Prisma } from "@prisma/client";
 
 async function findManyRentals() {
-  return prisma.rental.findMany();
+  return prisma.rental.findMany({
+    include: {
+      user: true,
+      game: true,
+    },
+  });
 }
 
 async function findRentalById(id: number) {

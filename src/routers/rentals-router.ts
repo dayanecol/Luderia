@@ -1,13 +1,19 @@
 import { authenticateToken } from "src/middlewares";
-
+import {
+  getAllRentals,
+  getRentalById,
+  createRental,
+  updateRental,
+  deleteRental,
+} from "src/controllers/rentals-controller";
 import { Router } from "express";
 const rentalsRouter = Router();
 
 // rentalsRouter.all("/*", authenticateToken);
-rentalsRouter.get("/");
-rentalsRouter.get("/:id");
-rentalsRouter.post("/");
-rentalsRouter.put("/:id");
-rentalsRouter.delete("/:id");
+rentalsRouter.get("/", getAllRentals);
+rentalsRouter.get("/:id", getRentalById);
+rentalsRouter.post("/", createRental);
+rentalsRouter.put("/:id", updateRental);
+rentalsRouter.delete("/:id", deleteRental);
 
 export { rentalsRouter };
